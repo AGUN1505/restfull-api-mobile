@@ -9,15 +9,17 @@
 </head>
 
 <body>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="text-center">
-                <?= $news['judul'] ?>
-            </h5>
-            <img src="<?= base_url('/img/') . $news['gambar'] ?>" class="card-img-top" alt="">
-            <p class="card-text">
-                <?= $news['isi'] ?>
-            </p>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="text-center">
+                    <?= $news['judul'] ?>
+                </h5>
+                <img src="<?= base_url('/img/') . $news['gambar'] ?>" class="card-img-top" alt="">
+                <p class="card-text">
+                    <?= $news['isi'] ?>
+                </p>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

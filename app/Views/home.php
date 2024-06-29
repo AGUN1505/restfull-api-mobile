@@ -15,11 +15,11 @@
     <?php
     foreach ($list as $dt) {
         echo $dt['id'] . ' - 
-        <a href ="' . base_url('berita/preview/') . $dt['id'] . '" >' . $dt['judul'] . '</a> - 
+        <table class="table"><a href ="' . base_url('berita/preview/') . $dt['id'] . '" >' . $dt['judul'] . '</a> - 
         ' . substr($dt['isi'], 0, 100) . ' - 
         ' . $dt['gambar'] . ' - 
         <a href ="' . base_url('berita/edit/') . $dt['id'] . '"><button class="btn btn-success">Edit</button></a> &nbsp
-        <a href ="' . base_url('berita/delete/') . $dt['id'] . '" onclick="return confirm(\'yakin nih mau hapus?\')"><button class="btn btn-danger">Delete</button></a><br>';
+        <a href ="' . base_url('berita/delete/') . $dt['id'] . '" onclick="return confirm(\'yakin nih mau hapus?\')"><button class="btn btn-danger">Delete</button></a> </table><br>';
     }
     ?>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
