@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <h3>Daftar Berita</h3>
-    <a href="<?= base_url('berita/create') ?>"><button>Tambah</button></a>
+    <h3 class="text-center">Daftar Berita</h3>
+    <a href=" <?= base_url('berita/create') ?>"><button class="btn btn-primary">Tambah</button></a>
     <br>
     <?php
     foreach ($list as $dt) {
         echo $dt['id'] . ' - 
-        <a href ="' . base_url('berita/preview/') . $dt['id'] . '">' . $dt['judul'] . '</a> - 
+        <a href ="' . base_url('berita/preview/') . $dt['id'] . '" >' . $dt['judul'] . '</a> - 
         ' . substr($dt['isi'], 0, 100) . ' - 
         ' . $dt['gambar'] . ' - 
-        <a href ="' . base_url('berita/edit/') . $dt['id'] . '">Edit</a> &nbsp
-        <a href ="' . base_url('berita/delete/') . $dt['id'] . '" onclick="return confirm(\'yakin nih mau hapus?\')">Delete</a><br>';
+        <a href ="' . base_url('berita/edit/') . $dt['id'] . '"><button class="btn btn-success">Edit</button></a> &nbsp
+        <a href ="' . base_url('berita/delete/') . $dt['id'] . '" onclick="return confirm(\'yakin nih mau hapus?\')"><button class="btn btn-danger">Delete</button></a><br>';
     }
     ?>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

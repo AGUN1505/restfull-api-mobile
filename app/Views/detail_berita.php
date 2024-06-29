@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <div>
-        <h5>
-            <?= $news['judul'] ?>
-        </h5>
-        <img src="<?= base_url('/img/') . $news['gambar'] ?>" alt="">
-        <p>
-            <?= $news['isi'] ?>
-        </p>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="text-center">
+                <?= $news['judul'] ?>
+            </h5>
+            <img src="<?= base_url('/img/') . $news['gambar'] ?>" class="card-img-top" alt="">
+            <p class="card-text">
+                <?= $news['isi'] ?>
+            </p>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

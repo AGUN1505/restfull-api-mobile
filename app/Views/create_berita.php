@@ -9,30 +9,30 @@
 </head>
 
 <body>
-    <h5>
+    <h5 class="text-center">
         Form Tambah Berita
     </h5>
     <form action="<?= base_url('berita/create') ?>" method="post">
         <?= csrf_field() ?>
-        <table>
+        <table class="table">
             <tr>
                 <td>Judul</td>
                 <td>:</td>
-                <td><input type="text" name="judul" placeholder="tambahkan judul"></td>
+                <td><input type="text" name="judul" placeholder="tambahkan judul" class="form-control"></td>
             </tr>
             <tr>
                 <td>Isi</td>
                 <td>:</td>
-                <td><input type="text" name="isi" placeholder="tambahkan isi"></td>
+                <td><input type="text" name="isi" placeholder="tambahkan isi" class="form-control"></td>
             </tr>
             <tr>
                 <td>gambar</td>
                 <td>:</td>
-                <td><input type="text" name="gambar" placeholder="tambahkan gambar"></td>
+                <td><input type="text" name="gambar" placeholder="tambahkan gambar" class="form-control"></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="simpan" value="simpan"></td>
+                <td><input type="submit" name="simpan" value="simpan" class="btn btn-primary"></td>
             </tr>
         </table>
     </form>

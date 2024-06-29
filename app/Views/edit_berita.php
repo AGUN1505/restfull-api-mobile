@@ -9,34 +9,37 @@
 </head>
 
 <body>
-    <h5>
+    <h5 class="text-center">
         Form edit Berita
     </h5>
     <form action="<?= base_url('berita/edit/') . $news['id'] ?>" method="post">
         <?= csrf_field() ?>
-        <table>
+        <table class="table">
             <tr>
                 <td>Judul</td>
                 <td>:</td>
-                <td><input type="text" name="judul" value="<?= $news['judul'] ?>" placeholder="tambahkan judul"></td>
+                <td><input type="text" name="judul" value="<?= $news['judul'] ?>" placeholder="tambahkan judul" class="form-control"></td>
+
             </tr>
             <tr>
                 <td>Isi</td>
                 <td>:</td>
-                <td><input type="text" name="isi" value="<?= $news['isi'] ?>" placeholder="tambahkan isi"></td>
+                <td><input type="text" name="isi" value="<?= $news['isi'] ?>" placeholder="tambahkan isi" class="form-control"></td>
             </tr>
             <tr>
                 <td>gambar</td>
                 <td>:</td>
-                <td><input type="text" name="gambar" value="<?= $news['gambar'] ?>" placeholder="tambahkan gambar"></td>
+                <td><input type="text" name="gambar" value="<?= $news['gambar'] ?>" placeholder="tambahkan gambar" class="form-control"></td>
             </tr>
             <tr>
                 <td></td>
 
-                <td><input type="submit" name="simpan" value="simpan"></td>
-                <a href="<?= base_url('/') ?>"><button>kembali</button></a>
+                <td><input type="submit" name="simpan" value="simpan" class="btn btn-primary"></td>
+
             </tr>
+
         </table>
+        <a href="<?= base_url('/') ?>"><button class="btn btn-primary ">kembali</button></a>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
